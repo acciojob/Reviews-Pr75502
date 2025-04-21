@@ -26,22 +26,22 @@ function Review() {
            
 
             <div key={currentPerson.id} className="review">
-                <h4 className="author">{currentPerson.name}</h4>
+                <h4 className="author" id={`author-${person.id}`}>{currentPerson.name}</h4>
                 <p className="job">{currentPerson.job}</p>
                 <p className="info">{currentPerson.text}</p>
                 <img className="person-img" src={currentPerson.image} />
-
+                <button className="prev-btn"
+                    onClick={handlePrev}
+                >Previous</button>
+                <button className="next-btn"
+                    onClick={handleNext}
+                >Next</button>
+                <button className="random-btn"
+                    onClick={handleRandom}
+                >surprise me</button>
                 </div>
         
-            <button className="prev-btn"
-            onClick={handlePrev}
-            >Previous</button>
-            <button className="next-btn"
-            onClick={handleNext}
-            >Next</button>
-            <button className="random-btn"
-            onClick={handleRandom}
-            >surprise me</button>
+           
 
         </div>
     )
