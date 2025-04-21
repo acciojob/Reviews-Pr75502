@@ -26,7 +26,7 @@ function Review() {
            
 
             <div key={currentPerson.id} className="review">
-                <h4 className="author" id={`author-${person.id}`}>{currentPerson.name}</h4>
+                <h4 className="author" id={`author-${currentPerson.id}`}>{currentPerson.name}</h4>
                 <p className="job">{currentPerson.job}</p>
                 <p className="info">{currentPerson.text}</p>
                 <img className="person-img" src={currentPerson.image} />
