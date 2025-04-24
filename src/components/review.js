@@ -30,10 +30,10 @@ function Review() {
                 <p className="job">{currentPerson.job}</p>
                 <p className="info">{currentPerson.text}</p>
                 <img className="person-img" src={currentPerson.image} />
-                <button id="author-4" className="prev-btn"
+                <button id="author-3"
                     onClick={handlePrev}
                 >Previous</button>
-                <button id="author-1" className="next-btn"
+                <button id="author-1"
                     onClick={handleNext}
                 >Next</button>
                 <button className="random-btn"
